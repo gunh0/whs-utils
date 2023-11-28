@@ -9,25 +9,15 @@ def crawl_and_parse(url):
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, "html.parser")
         pull_requests = soup.find_all(
-            "div", class_="flex-auto min-width-0 p-2 pr-3 pr-md-2"
+            "a",
+            class_="Link--primary v-align-middle no-underline h4 js-navigation-open markdown-title",
         )
 
         data = []
 
         for pr in pull_requests:
-            title = pr.find("a", class_="Link--primary")["title"]
-            number = pr.find("span", class_="opened-by").text.split("#")[1].split()[0]
-            opened_by = pr.find("a", class_="Link--muted").text.strip()
-            opened_at = pr.find("relative-time")["datetime"]
-
-            data.append(
-                {
-                    "Number": number,
-                    "Title": title,
-                    "Opened By": opened_by,
-                    "Opened At": opened_at,
-                }
-            )
+            print(pr, "\n")
+            data.append({"Title": pr.text.strip()})
 
         df = pd.DataFrame(data)
         print(df)
