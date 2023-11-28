@@ -19,7 +19,7 @@ jenkins CVE-2018-1000861 분석 결과,
 [김지민/Jimin0605]: log4j CVE-2021-44228 분석 코드 및 결과,김지민
 [방동효/donghyo1234]: httpd CVE-2017-15715 분석 및 결과,방동효
 [송지선/wwwSong]: Struts2 CVE-2017-5638 분석 코드 및 결과,송지선
-윤수민/azs3983] php 8.1   backdoor 한글화 작업,윤수민
+윤수민/azs3983] php 8.1   backdoor 한글화 작업,
 [오윤석/lux-02]: gitlab CVE-2016-9086 분석 코드 및 결과,오윤석
 [손성원/orrorrorr]: phpMyAdmin CVE-2018-12613 분석 및 결과,손성원
 [심택범/GODMuang]: httpd CVE-2021-41773 번역,심택범
@@ -61,7 +61,7 @@ jenkins CVE-2018-1000861 분석 결과,
 [이종건/rmvhrdl]:cacti CVE-2022-46169 분석 코드 및 결과,이종건
 [박정빈/jellybin06] php/CVE-2019-11043 분석 코드 및 결과,박정빈
 [박정은/Eunginius]: Log4j CVE-2017-5645 분석 및 결과,박정은
-[박윤/moons03]: Django CVE-2019-14234 분석 코드 및 결과,
+[박윤/moons03]: Django CVE-2019-14234 분석 코드 및 결과,박윤
 [최민석/Catower917] Apache-Superset/CVE-2023-27524 분석 코드 및 결과,최민석
 [유성모/s2ongmo] docker/unauthorized-rce 분석 코드 및 결과,유성모
 [김기현/hellogihyeon]: libssh CVE-2018-10933 분석 및 결과,김기현
@@ -94,14 +94,14 @@ jenkins CVE-2018-1000861 분석 결과,
 [라수진/cdefgala]: httpd CVE-2017-15715 분석 및 결과,라수진
 [김우종/kim0030711]: httpd CVE-2017-15715 분석 및 결과,김우종
 [김서율/BamT0ri]: httpd CVE-2021-41773 분석 및 결과,김서율
-[이진/xorverbin]: Nacos CVE-2021-29441 코드 분석 및 결과,
+[이진/xorverbin]: Nacos CVE-2021-29441 코드 분석 및 결과,이진
 [정다은/xmi1e-vir]: django CVE-2017-12794 분석 코드 및 결과,정다은
 [이재준/leejaejjun]: couchdb/CVE-2022-24706 분석 및 결과,이재준
 [이재현/soul0908]: coldfusion CVE-2010-2861 분석 결과,이재현
 [김동규/DDongu]: git CVE-2017-8386 분석 코드 및 결과,김동규
 [도원준/one3147]: Apache HTTP Server 2.4.50 CVE-2021-42013 분석 결과,도원준
 [정준수/jeongjunsoo]: openssl CVE-2022-0778 분석 코드 및 결과,정준수
-[오훈/55hnnn]: solr CVE-2019-17558 분석 코드 및 결과,
+[오훈/55hnnn]: solr CVE-2019-17558 분석 코드 및 결과,오훈
 [한종혁/ookk2007]: wordpress pwnscriptum 분석 코드 및 결과,한종혁
 [박철준/cheoljun99]: zabbix CVE-2020-11800 분석 코드 및 결과,박철준
 [이정빈/binsh0501]: bash CVE-2014-6271 분석,이정빈

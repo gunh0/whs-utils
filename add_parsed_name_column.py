@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_csv("result.csv")
 
 # Extract the "Title" column
-df["Parsed Name"] = df["Title"].str.extract(r"([ㄱ-힣]{3})/")
+df["Parsed Name"] = df["Title"].str.extract(r"\[([ㄱ-힣]{2,3})/")
 
 # Display the DataFrame
 print(df)
