@@ -1,0 +1,7 @@
+POST _bulk
+{"index":{"_index":"security-logs"}}
+{"timestamp":"2024-01-27T12:00:00","event_type":"login_attempt","status":"success","user":"user1"}
+{"index":{"_index":"security-logs"}}
+{"timestamp":"2024-01-27T12:05:00","event_type":"login_attempt","status":"failed","user":"user2"}
+{"index":{"_index":"security-logs"}}
+{"timestamp":"2024-01-27T12:10:00","event_type":"file_access","status":"success","user":"user1","file":"/var/log/syslog"}
