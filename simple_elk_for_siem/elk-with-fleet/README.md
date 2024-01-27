@@ -15,8 +15,8 @@ openssl x509 -fingerprint -sha256 -noout -in ./tmp/ca.crt | awk -F"=" {' print $
 # and paste ca.crt
 ssl:
 certificate_authorities:
-- |
-  -----BEGIN CERTI ...
+    - |
+        -----BEGIN CERTI ...
 ```
 
 
