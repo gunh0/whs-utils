@@ -125,7 +125,12 @@ choco install k9s
 -   K8s Dashboard Deploy (https://github.com/kubernetes/dashboard/tree/master)
 
 ```bash
+# Directly
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
+
+# Save to file and apply
+wget https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml -O dashboard.yaml
+kubectl apply -f dashboard.yaml
 
 # Docs: https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
 kubectl apply -f dashboard-admin-user.yaml
@@ -134,6 +139,7 @@ kubectl -n kubernetes-dashboard create token admin-user
 {token} # Copy the token
 kubectl proxy
 Go to http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
 ```
 
 -   Deploy Nginx
