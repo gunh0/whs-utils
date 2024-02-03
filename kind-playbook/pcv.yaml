@@ -1,0 +1,12 @@
+# local path provisioner only supports readwriteonce
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+    name: pvc-test
+spec:
+    storageClassName: standard
+    accessModes:
+        - ReadWriteOnce
+    resources:
+        requests:
+            storage: 500Mi
