@@ -111,3 +111,46 @@ kind delete cluster --name kind-single-node
 ```bash
 kind create cluster --name kind-multi-node-test --config ./kind-multi-node-config.yaml
 ```
+
+-   Install k9s : K8s CLI To Manage Your Clusters In Style!
+
+```bash
+# Mac OS
+brew install k9s
+
+# Windows
+choco install k9s
+```
+
+-   K8s Dashboard Deploy (https://github.com/kubernetes/dashboard/tree/master)
+
+```bash
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
+
+# Docs: https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
+kubectl apply -f dashboard-admin-user.yaml
+kubectl apply -f cluster-role-binding.yaml
+kubectl -n kubernetes-dashboard create token admin-user
+{token} # Copy the token
+kubectl proxy
+Go to http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+```
+
+-   Deploy Nginx
+
+```bash
+kubectl apply -f https://k8s.io/examples/application/deployment.yaml
+
+# Expose Nginx
+kubectl expose deployment nginx-deployment --type NodePort
+
+kubectl port-forward service/nginx-deployment 8000:80
+```
+
+-   Clean Up
+
+```bash
+kubectl delete deployment nginx-deployment
+...
+kind delete cluster --name kind-multi-node-test
+```
