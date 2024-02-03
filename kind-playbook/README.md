@@ -99,3 +99,15 @@ kubectl apply -f ./pvc.yaml
 kubectl get pv,pvc
 kubectl get pods
 ```
+
+-   Delete the cluster
+
+```bash
+kind delete cluster --name kind-single-node
+```
+
+-   Deploy Multi-Node Cluster
+
+```bash
+kind create cluster --name kind-multi-node-test --config ./kind-multi-node-config.yaml
+```
