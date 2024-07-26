@@ -149,10 +149,10 @@ choco install k9s
 - K8s Dashboard Deploy (<https://github.com/kubernetes/dashboard/tree/master>)
 
 ```bash
-# Directly
+# Directly (Not recommended)
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
 
-# Save to file and apply
+# Save to file and apply (Recommended)
 wget https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml -O dashboard.yaml
 kubectl apply -f dashboard.yaml
 
@@ -177,10 +177,13 @@ kubectl expose deployment nginx-deployment --type NodePort
 kubectl port-forward service/nginx-deployment 8000:80
 ```
 
-- Deploy GCP microservices
+- Deploy GCP microservices demo
+
+> <https://github.com/GoogleCloudPlatform/microservices-demo.git>
+
+![GCP Microservices Demo](./images/gcp-microservices-demo.png)
 
 ```bash
-# Git : https://github.com/GoogleCloudPlatform/microservices-demo.git
 git clone https://github.com/GoogleCloudPlatform/microservices-demo.git
 cd microservices-demo/
 kubectl apply -f ./release/kubernetes-manifests.yaml
